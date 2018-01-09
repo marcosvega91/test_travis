@@ -27,8 +27,8 @@ jobs:
           - v1-dependencies-
 
       - run:
-	        name: Install dependences
-	        command: npm install
+          name: Install dependences
+          command: npm install
           
       - run:
           name: Check Prettier
