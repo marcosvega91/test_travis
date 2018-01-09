@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ci-check": "npm run prettier:diff",
+    "format": "prettier --config .prettierrc --write \"**/*.js\"",
+    "nit": "prettier --config .prettierrc --list-different \"**/*.js\"",
+    "prettier": "npm run format",
+    "prettier:diff": "npm run nit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/marcosvega91/test_travis/issues"
   },
-  "homepage": "https://github.com/marcosvega91/test_travis#readme"
+  "homepage": "https://github.com/marcosvega91/test_travis#readme",
+  "devDependencies": {
+    "prettier": "1.9.2"
+  }
 }
